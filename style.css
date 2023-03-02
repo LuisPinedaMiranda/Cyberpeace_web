@@ -1,8 +1,89 @@
-.title{
-    border: 5px red solid;
-    background-color: azure;
-    width: 400px;
-    margin: auto;
-    text-align: center;
-    border-radius: 3px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/*-----------------AREA DE navigation-----------------------*/
+.navigation{  /*Modificaciones para toda el área "navigation"*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gainsboro;
+    height: 110px;
+    padding: 0 50px;
+
+}
+/* Codigo para la imagen*/
+.image{
+    border: 2px solid black;
+}
+/*---------------------------------------*/
+/* Codigo para la lista y su ul*/
+.list{
+    border: 2px solid black;
+    width: 650px;
+}
+
+.list-items{  /* Hacer flex los hijos de list-items*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-items li {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list-items li a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    /*transition: 0.4s;*/
+}
+
+/*--------------------------------------*/
+/* Código para el botón*/
+
+.button{
+    border: 2px solid black;
+}
+
+/*--------esconder-menu-------------*/
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    /*display: none;*/
+    transition: 0.4s;
+}
+
+/*--------mostrar-menú-------------*/
+
+.mostrar-menu{
+    order: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.dropdown:hover > .dropdown-menu{
+    display: block;
+}*/
